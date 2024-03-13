@@ -2,15 +2,14 @@ import React, { useState } from "react"
 import Scooby from "./ImagensMain/scooby.png"
 import Ben10 from "./ImagensMain/ben10.png"
 import Looney from "./ImagensMain/looney.png"
-
-//a segunda section utilizaremos o map 
+//a segunda section utilizaremos o map, map é um método que mapeia (percorre) arrays 
 import Gumball from "./ImagensMain/gumball.png"
 import Meninas from "./ImagensMain/meninas.png"
 import TomJerry from "./ImagensMain/tomjerry.png"
-
+//----------------------------------------------------------
 import * as S from "./EstiloMain.jsx"
-import Programacao from "../Programacao/Programacao.jsx"
 
+import Programacao from "../Programacao/Programacao.jsx"
 
 function Main() {
 
@@ -19,7 +18,6 @@ function Main() {
         Meninas,
         TomJerry
     ])
-
 
     return (
         <main>
