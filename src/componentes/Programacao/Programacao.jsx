@@ -22,6 +22,10 @@ function Programacao() {
         { hora: "14:00h", nome: "BILLY E MANDY", imagem: Billy, desenhoManha: false },
     ])
 
+    //const desenhoAntesMeioDia = A const que vai guardar todos os itens filtrados
+    // desenhos = é o meu estado, que está guardando TODO O MEU ARRAY DE OBJETOS [{},{},{}]
+    //filter = é o método que vai filtrar esse array 
+    //item.desenhoManha = pegar todos os items "desenhoManha" e Filtrar trazendo SOMENTE os que são TRUE / VERDADE
     const desenhoAntesMeioDia = desenhos.filter((item) => item.desenhoManha === true)
 
     return (
@@ -37,17 +41,16 @@ function Programacao() {
             </S.Section>
 
             <S.Section2>
-                <h2>Desenhos da manhã</h2>
+                                
+                <h2>Desenhos da manhã</h2> 
 
                 {desenhoAntesMeioDia.map((item) => (
-                    <div>
-                        <h3> {item.nome} </h3>
-                        <h3> {item.hora}  </h3>
+                    <S.CardManha>
+                        <h2> {item.nome} </h2>
+                        <h2> {item.hora} </h2>
                         <img src={item.imagem} alt={item.nome} />
-                    </div>
-
+                    </S.CardManha>
                 ))}
-
             </S.Section2>
 
         </>
